@@ -48,7 +48,7 @@ Usage:
 This package comes with an installer that makes things extremely easy:
 
 ```bash
-git colne https://github.com/keralahacker/anonsurf
+git clone https://github.com/keralahacker/anonsurf
 cd anonsurf && chmod +x *
 ./installer.sh
 ```
