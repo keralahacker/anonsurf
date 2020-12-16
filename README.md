@@ -52,5 +52,43 @@ git clone https://github.com/keralahacker/anonsurf
 cd anonsurf && chmod +x *
 ./installer.sh
 ```
+### Example in kali Linux 
+```
+kali@kali:~$ sudo anonsurf start
+[sudo] password for kali: 
+ * killing dangerous applications
+ * cleaning some dangerous cache elements
+[ i ] Stopping IPv6 services:
 
+
+[ i ] Starting anonymous mode:
+
+ * Tor is not running!  starting it  for you
+
+ * Modified resolv.conf to use Tor and Private Internet Access DNS
+ * All traffic was redirected through Tor
+
+[ i ] You are under AnonSurf tunnel
+
+
+kali@kali:~$ sudo anonsurf status
+? tor.service - Anonymizing overlay network for TCP (multi-instance-master)
+     Loaded: loaded (/lib/systemd/system/tor.service; disabled; vendor preset: disabled)
+     Active: active (exited) since Wed 2020-12-16 18:31:22 UTC; 9s ago
+    Process: 1867 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+   Main PID: 1867 (code=exited, status=0/SUCCESS)
+
+Dec 16 18:31:22 kali systemd[1]: Starting Anonymizing overlay network for TCP (multi-instance-master)...
+Dec 16 18:31:22 kali systemd[1]: Finished Anonymizing overlay network for TCP (multi-instance-master).
+
+kali@kali:~$ sudo anonsurf myip
+
+My ip is:
+
+51.77.148.119
+
+----------------------------------------------------------------------
+
+kali@kali:~$ 
+```
 Once the installer is complete, you will be able to use both the anonsurf and pandora modules.
